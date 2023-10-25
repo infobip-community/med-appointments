@@ -107,7 +107,7 @@ func sendFollowUpReminder(client infobip.Client, channel int, patient Patient, a
 	fmt.Println("Sending follow-up reminder!")
 	subject := "Dr. Bip Follow-Up Reminder"
 	text := fmt.Sprintf("%s, please schedule a follow-up appointment with Dr. Bip soon.", patient.Name)
-	date := appointment.AddDate(0, 0, -25)
+	date := appointment.AddDate(0, 0, 25)
 	if channel == CHANNEL_EMAIL {
 		sendEmail(client, EMAIL_FROM, patient.Email, subject, text, date)
 	} else {
