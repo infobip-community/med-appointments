@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/google/uuid"
 	"github.com/infobip-community/infobip-api-go-sdk/v3/pkg/infobip"
 	"github.com/infobip-community/infobip-api-go-sdk/v3/pkg/infobip/models"
 	"time"
@@ -44,7 +45,7 @@ func sendEmail(client infobip.Client, from string, to string, subject string, te
 		To:      to,
 		Subject: subject,
 		Text:    text,
-		BulkID:  fmt.Sprintf("appointments-%d", time.Now().Unix()),
+		BulkID:  fmt.Sprintf("appointments-%d", uuid.New()),
 		SendAt:  sendAt.Format(time.RFC3339),
 	}
 
