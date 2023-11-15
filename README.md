@@ -2,7 +2,7 @@
 
 A CLI demo showcasing a simple medical appointment system with notifications and reminders.
 
-For a more in-depth exploration of the project, check our [DevHub post](infobip.com/developers).
+For a more in-depth exploration of the project, check our [DevHub post](https://www.infobip.com/developers/blog/infobip-api-for-medical-appointments-a-go-sdk-use-case).
 
 ## Prerequisites
 
